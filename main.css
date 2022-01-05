@@ -1,0 +1,17 @@
+.th-1 {
+  background-color: #54cdc9;
+  font-weight: bold;
+}
+.td-1 {
+  color: #128cb9;
+}
+.table-1 {
+  border: 2px solid #000000 !important;
+}
+
+.tr-2:nth-child(even) {
+  background: #e0f0e9;
+}
+.tr-2:nth-child(odd) {
+  background: #b3edcf;
+}
