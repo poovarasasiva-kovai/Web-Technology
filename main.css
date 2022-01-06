@@ -8,10 +8,3 @@
 .table-1 {
   border: 2px solid #000000 !important;
 }
-
-.tr-2:nth-child(even) {
-  background: #e0f0e9;
-}
-.tr-2:nth-child(odd) {
-  background: #b3edcf;
-}
