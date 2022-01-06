@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .mytable{
+            background-color:antiquewhite;
+            border:1px solid #000000;
+            padding:12px;
+        }
+    </style>
+  </head>
+  <body align="Center">
+    <h1>Event count for a month</h1>
+    <table align="Center" class="mytable">
+      <tr>
+        <td align="start">
+          <lable for="birthday">Birthday Party Event</lable>
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+          <input id="birthday" name="birthday" />
+        </td>
+      </tr>
+      <tr>
+        <td align="start">
+          <lable for="engagement">Engagement Parties Event</lable>
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+          <input id="engagement" name="engagement" />
+        </td>
+      </tr>
+      <tr>
+        <td align="start">
+          <lable for="corporate">Corporate Event</lable>
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+          <input id="corporate" name="corporate" />
+        </td>
+      </tr>
+      <tr>
+        <td align="start">
+          <lable for="social">Social Gathering Event</lable>
+        </td>
+        <td>
+            :
+        </td>
+        <td><input id="social" name="social" /></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button type="button" onclick="submit()">Submit</button>
+        </td>
+      </tr>
+    </table>    
+      <h3 id="result"></h3>
+    </div>
+    <script src="Maximum_Event_Count.js"></script>
+  </body>
+</html>
