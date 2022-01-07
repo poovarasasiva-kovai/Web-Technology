@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dislike {
+        transform: rotate(180deg);
+      }
+      .outer {
+        width: 100%;
+        text-align: center;
+      }
+
+      .inner {
+        display: inline-block;
+        margin: 4px;
+      }
+    </style>
+    <script>
+        var count = 0;
+        function like()
+        {
+            count++;
+            document.getElementById("idcount").innerHTML = count;
+        }
+        function dislike()
+        {
+            count--;
+            document.getElementById("idcount").innerHTML = count;
+        }
+    </script>
+  </head>
+  <body align="Center">
+    <h1>Events & Promotion</h1>
+    <br />
+    <img src="invitaion.jpg" width="300px" height="280px" />
+    <br />
+    <br />
+    <div class="outer">
+      <button>
+        <img src="like.svg" onclick="like()"/>
+      </button>
+      <button>
+        <img class="dislike" src="like.svg" onclick="dislike()"/>
+      </button>
+      <p class="inner">Likes<p class="inner">"<p class="inner" id="idcount">0</p>"</p></p>
+    </div>
+  </body>
+</html>
