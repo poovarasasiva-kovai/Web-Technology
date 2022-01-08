@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body align="Center">
+    <h1>Event Schedule</h1>
+    <form>
+      Event Name: <input type="text" id="name" />
+      <br />
+      <br />
+      Event Venue: <input type="text" id="venue" />
+      <br />
+      <br />
+      Event Date: <input type="text" id="date" />
+      <br />
+      <br />
+      Event Cost: <input type="text" id="cost" />
+      <br />
+      <br />
+      <input type="button" value="Add Event" onclick="AddEvent()" />
+      <input type="button" value="Display Event" onclick="DisplayEvent()" />
+      <input type="button" value="Sort" onclick="SortEvent()" />
+    </form>
+    <br />
+    <br />
+    <div id="table" align="Center"></div>
+    <script src="Sort_Event.js"></script>
+  </body>
+</html>
