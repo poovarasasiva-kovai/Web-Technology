@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          SecureToken: "5f7d637a-12dd-4116-b45e-32c3ce7e01ea",
+          To: "poovarasasiva16@gmail.com",
+          From: "learningtowardsend@gmail.com",
+          Subject: "Sending Email using javascript",
+          Body: "Well that was easy!!",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <div class="LoginContainer">
+      Email :
+      <br />
+      <input type="email" id="email" />
+      <br />
+      <br />
+      Password :
+      <br /><input type="password" id="password" />
+      <br />
+      <br />
+      <input type="submit" value="SignUp" onclick="SignUp()" />
+      <input type="submit" value="SignIn" onclick="sendEmail()" />
+    </div>
+    <!-- </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="Login.js"></script>
+  </body>
+</html>
